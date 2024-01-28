@@ -14,14 +14,9 @@
   <body>
     <!-- Nave Bar -->
     <header
-      class="bg-bgcolor flex justify-between items-center p-8 w-full fixed"
-    >
+      class="bg-bgcolor flex justify-between items-center p-8 w-full fixed ">
       <div>
-        <img
-          src="./public/assets/img/logo.png"
-          alt="gopalakrishnan-logo"
-          class="w-52"
-        />
+        <a href="#home"><img src="./public/assets/img/logo.png" alt="logo" class=" sm:w-60 hover:-translate-y-1 hover:scale-110 duration-300 scroll-smooth"></a>
       </div>
       <div>
         <ul class="flex text-red-500 space-x-5 ml-8">
@@ -35,23 +30,31 @@
             <a href="#skiles">Skiles</a>
           </li>
           <li>
-            <a href="#skiles">Contact</a>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
       </div>
     </header>
     <main>
       <!-- Banner Section -->
-      <div class="bg-bgcolor">
-        <img src="./public/assets/img/bgbanner.jpg" alt="" />
-      </div>
+        <div id="home" style="background-image: url('./public/assets/img/bgbanner.jpg');" class="w-full h-96 sm:w-screen sm:h-screen bg-center bg-cover border-solid border-2 border-yellow-500 rounded-lg">
+        <div class="text-center pt-40 sm:pt-72 scroll-smooth space-y-5">
+          <p class="text-white font-semibold">WELECOME</p>
+          <p>
+          <h2 class="text-white"><span class="text-red-500">I'M </span>GOPALAKRISHNAN💖</h2>
+        </p>
+        <a href="https://github.com/Gopalakrishnan008" target="_blank" class="bg-transparent border-solid border-red-500 border-2 rounded-full text-red-300 p-2 mt-5 w-fit ml-auto sm:ml-auto sm:mr-auto">FrontEnd Developer</a>
+        </div>
+        </div>
+        
+        
       <!-- About Section -->
       <div
-        class="bg-bgcolor text-white border-solid border-2 border-yellow-500"
+        class="bg-bgcolor text-white border-solid border-2 rounded-xl border-yellow-500"
       >
         <h2
-          class="font-bold text-4xl p-5 text-center text-red-600 underline hover:animate-bounce"
-        >
+          class="font-bold text-4xl p-5 text-center scroll-smooth text-red-600 underline hover:animate-bounce"
+        id="about">
           About
         </h2>
         <div class="flex p-5 space-x-14 sm:justify-center">
@@ -83,11 +86,18 @@
         </p>
       </div>
       <!-- Skiles Section -->
-      <div class="bg-bgcolor text-white">
-        <h3
-          class="text-red-600 p-5 text-2xl font-bold text-center hover:underline">Skiles</h3>
-        <div class="flex justify-evenly flex-wrap text-yellow-500 mb-5 text-center font-semibold">
-          <div class="to-background hover:-translate-y-1 hover:scale-110 duration-300">
+      <div class="bg-bgcolor text-white border-solid border-2 border-yellow-500 rounded-xl" id="skiles">
+        <h3 
+          class="text-red-600 p-5 text-2xl font-bold text-center hover:underline "
+        >
+          Skiles
+        </h3>
+        <div
+          class="flex justify-evenly flex-wrap text-yellow-500  text-center font-semibold"
+        >
+          <div
+            class="hover:-translate-y-1 hover:scale-110 duration-300"
+          >
             <img
               src="./public/assets/img/html.jfif"
               title="Hyper Text Markup Language"
@@ -102,7 +112,7 @@
               alt="css"
               class="w-40 h-44"
             />
-            <h2 class=" mt-1">CSS3</h2>
+            <h2 class="mt-1">CSS3</h2>
           </div>
           <div class="hover:-translate-y-1 hover:scale-110 duration-300">
             <img
@@ -125,9 +135,37 @@
         </div>
       </div>
       <!-- Projects Section -->
-      <div></div>
+      
+        <div id="projects" class="text-white text-center pt-5 bg-bgcolor border-solid border-2 border-yellow-500 rounded-xl">
+          <div>
+          <h2 class=" text-red-500 font-semibold text-2xl hover:animate-pulse ">Projects</h2>
+        </div>
+        <div class="flex flex-wrap justify-evenly p-5">
+          <div class="w-40 hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="./public/assets/img/whatsapp.jpg" alt="whatsapp-img">
+          <h2 class="text-yellow-500 font-bold">WHATSAPP CLONE</h2>
+        </div>
+        <div class="w-40 mt-6 items-center hover:-translate-y-1 hover:scale-110 duration-300">
+          <img src="./public/assets/img/movieshub.png" alt="movieshub-img">
+        <h2 class="text-yellow-500 font-bold">MovieHub-Webpage</h2>
+        </div>
+      </div>
+      </div>
       <!-- Contact Section -->
-      <div class=""></div>
+      <div class="bg-bgcolor text-red-500 border-solid border-2 border-yellow-500 rounded-xl text-center text-2xl font-semibold">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              
+        <h2 class="mb-4 text-4xl font-extrabold text-center text-gray-900 ">Contact Us</h2>
+        <div> 
+          <label for="phone" class=" text-xl font-medium text-gray-300">Phone:</label>
+          <input type="number" class="shadow-sm bg-gray-50 border-none text-gray-900 text-sm rounded-lg p-1" placeholder="PhoneNumber"> 
+        </div>          
+        <div>
+          <label for="email" class="text-xl font-medium text-gray-300">Email :</label>
+          <input type="email" id="email" class="shadow-sm bg-gray-50 border-none text-gray-900 text-sm rounded-lg p-1" placeholder="name@email.com">
+          </div>
+          </div>
+      </div>
     </main>
   </body>
 </html>
