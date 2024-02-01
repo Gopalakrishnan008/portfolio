@@ -6,32 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GOPALAKRISHNAN</title>
   <link rel="shortcut icon" href="/portfolio/assets/favicon-6a85JtL-.png" type="image/x-icon" />
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Ul1ytIcz.css">
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-yjlhQW2W.css">
 </head>
 
 <body>
   <!-- Nave Bar -->
-  <nav class="bg-[rgba(27,31,36,0.9)] flex justify-between items-center p-4 sm:p-8 w-full fixed">
+  <nav class="bg-[rgba(27,31,36,0.9)] flex justify-between items-center p-4 sm:p-8 w-full" id="nav">
     <div>
       <a href="#home"><img src="/portfolio/assets/logo-jSmF4dVB.png" alt="logo" class="imghover w-44 sm:w-60  "></a>
     </div>
-    <div class="w-8 sm:hidden ">
-      <select class="block appearance-none w-full rounded bg-bgcolor">
-        <option class="text-textcolor"></option>
-        <option class="text-textcolor">HOME</option>
-        <option class="text-textcolor">ABOUT</option>
-        <option class="text-textcolor">SKILES</option>
-        <OPtion class="text-textcolor">PROJECTS</OPtion>
-        <OPtion class="text-textcolor">SOCIAL-MEDIA</OPtion>
-        <OPtion class="text-textcolor">CONTACT-ME</OPtion>
-      </select>
-      <div class="pointer-events-none inset-y-0 right-0 flex items-center   text-gray-700">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24 "
-          class="text-textcolor ">
-          <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" />
-        </svg>
-      </div>
+    <!-- nav toggle-bar -->
+    <div class="relative  sm:hidden ">
+       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24 "
+        class="text-textcolor">
+        <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" /></svg>
+  
+      <ul class="hidden absolute right-4 space-y-4 border-solid border-red-600 border-2 rounded-lg p-4 text-white font-bold" >
+        <li class="hover:text-sky-500"><a href="#home">HOME</a></li>
+        <li class="hover:text-sky-500"><a href="#about">ABOUT</a></li>
+        <li class="hover:text-sky-500"><a href="#skiles">SKILES</a></li>
+        <li class="hover:text-sky-500"><a href="#project">PROJECT</a></li>
+        <li class="hover:text-sky-500"><a href="#contact">CONTACT</a></li>
+      </ul> 
+       
     </div>
+    <!-- navbar for laptop -->
     <div class="hidden sm:block ">
       <ul class="flex text-textcolor  font-bold hover: space-x-12 ml-8">
         <li>
@@ -145,7 +144,7 @@
           <h6><b>Lives In :</b>Erode, TamilNadu</h6>
           <h6><b>Age :</b> 20</h6>
           <h6><b>Gender :</b> Male</h6>
-          <h6><b>Degere :</b>Diploma in CSE</h6>
+          <h6><b>Degree :</b>Diploma in CSE</h6>
           <h6><b>EXPERIENCE:</b>Fresher</h6>
         </div>
       </div>
@@ -213,6 +212,7 @@
     </div>
 
     <!-- Contact Section -->
+    <div>
     <form
       class="pb-6 text-center font-semibold w-full pt-5 bg-bgcolor border-solid border-2 border-yellow-500 rounded-xl">
       <h3 id="contactus" class="text-textcolor p-5 text-2xl font-bold text-center imghover ">
@@ -236,6 +236,13 @@
           Message</button>
       </div>
     </form>
+    <!-- top scrooler -->
+    <div class=" right-14 bottom-20 fixed">
+    <a href="#nav" title="home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024" class="absolute text-white bg-textcolor rounded-full p-1"><path fill="currentColor" d="M104.704 685.248a64 64 0 0 0 90.496 0l316.8-316.8l316.8 316.8a64 64 0 0 0 90.496-90.496L557.248 232.704a64 64 0 0 0-90.496 0L104.704 594.752a64 64 0 0 0 0 90.496"/></svg>
+    </a>
+    </div>
+    </div>
   </main>
   <!-- Footer Section -->
   <footer>
@@ -244,5 +251,6 @@
         class="text-textcolor hover:text-sky-500">Gopalakrishnan...</a> </span>
     </p>
   </footer>
+  <script src="./public/assets/js/main.js"></script>
 </body>
 </html>
