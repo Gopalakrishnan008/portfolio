@@ -77,8 +77,8 @@
       </h2>
       <div class=" p-5 space-x-14 flex flex-wrap justify-center">
         <div>
-          <img src="./assets/img/myimg.jfif" alt="GOPALAKRISHNAN img"
-            class="w-55 h-56 ml-5 sm:w-77 sm:h52 imghover rounded-lg " />
+          <img src="./assets/img/myimg.jpg" alt="GOPALAKRISHNAN img"
+            class="w-56 h-56 ml-5 sm:w-60 sm:h52 imghover rounded-lg " />
           <div class="flex space-x-3 ml-4 mt-5 sm:ml-2 sm:space-x-5">
             <a href="https://www.facebook.com/profile.php?id=100027960270437&mibextid=gik2fB" class="imghover sm:hidden"
               target="_blank" title="FACEBOOK">
@@ -215,7 +215,7 @@
         <div class="w-40 imghover">
           <a href="https://gopalakrishnan008.github.io/Whatsapp-UI/" target="_blank" title="Whatsapp-UI">
             <img src="./assets/img/whatsapp.jpg" alt="whatsapp-img" class="rounded-lg">
-            <h2 class="text-yellow-500 font-bold">WHATSAPP CLONE</h2>
+            <h2 class="text-yellow-500 font-bold">WHATSAPP-UI</h2>
           </a>
         </div>
         <div class="w-40 mt-6 items-center imghover">
@@ -245,16 +245,16 @@
         <div class="space-y-5">
           <div class="flex flex-col items-center">
             <label for="FirstName" class="text-yellow-500">Your Name:</label>
-            <input type="text" placeholder="FirstName" required class="w-72 bg-gray-300 rounded-md outline-none p-1 ">
+            <input type="text" placeholder="FirstName" required class="w-72 sm:w-96 bg-gray-300 rounded-md outline-none p-1 ">
           </div>
           <div class="flex flex-col items-center">
             <label for="email" class="text-yellow-500">E-Mail:</label>
-            <input type="email" placeholder="G-Mail" required class="w-72 bg-gray-300 rounded-md outline-none p-1">
+            <input type="email" placeholder="G-Mail" required class="w-72 sm:w-96 bg-gray-300 rounded-md outline-none p-1">
           </div>
           <div class="flex flex-col items-center ">
             <label for="textarea" aria-required="true" class="text-yellow-500">Write Your Feedback...</label>
             <textarea name="feedback" placeholder="Write Your FeedBack"
-              class="w-72 h-28 p-2 bg-gray-300 rounded-md outline-none"></textarea>
+              class="w-72 sm:w-96 h-28 p-2 bg-gray-300 rounded-md outline-none"></textarea>
           </div>
           <button id="sendmsg" class="bg-textcolor imghover hover:bg-sky-500 p-2 rounded-md text-white">Send
             Message</button>
@@ -279,18 +279,7 @@
         class="text-textcolor hover:text-sky-500">Gopalakrishnan...</a> </span>
     </p>
   </footer>
-  <script>
-    const btnEl = document.getElementById('mobileNavBtn');
-    const listEl = document.getElementById('mobileNav');
-    btnEl.addEventListener('click', () => {
-      listEl.classList.toggle('toggle')
-    });
-    const sendmsgEl =document.getElementById("sendmsg");
-    sendmsgEl.addEventListener('click',() => {
-      alert("Message Send Succesfully");
-      event.preventDefault();
-    });
-  </script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
